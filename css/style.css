@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
+
+body{
+    font-family: "Dosis",sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+a{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+section{
+     
+    padding: 80px;
+}
+
+#cover{
+    background-image: url(../image/Cover_pic.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.overlay{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(33, 32, 30,0.5);
+    z-index: -1;
+}
+
+.btn{
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary{
+    background-color: #7ab005;
+    border-color: #7ab005;
+}
+.btn-primary:hover{
+    background-color: #88c406;
+    border-color: #88c406;
+}
+
+.navbar{
+    transition: all 1s ease;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-dark.navbar-nav.nav-link.active{
+    color: red;
+}
+
+.intro{
+    margin-bottom: 50px;
+}
+
+.icon-box{
+    width: 80px;
+    height: 80px;
+    background-color: #7ab005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin:0 auto 24px auto;
+    color: #fff;
+}
+.icon-box i{
+    font-size: 34px;
+}
+
+#minestone{
+    background-image: url(../image/Cover_pic.jpg);
+}
+
+.counter.number{
+    line-height: 1;
+}
+.counter.divider{
+    width: 80px;
+    height: 2px;
+    background-color: #7ab005;
+    margin: 14px auto;
+}
+
+.project{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-info{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #26302c;
+    opacity: 0;
+    transform: scale(0);
+}
+.project:hover .project-info{
+    opacity: 1;
+    transform: scale(1);
+    opacity: .7;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
